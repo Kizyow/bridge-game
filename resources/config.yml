@@ -1,0 +1,69 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                     Bridge (Global)                  | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Select the mode for the game. You can choose '1v1', '2v2' or '4v4'.
+mode: "1v1"
+
+# Set the list of all maps.
+maps:
+  - "world"
+
+# Force to play a selected map, set "none" to randomize
+map: "none"
+
+# Set the timer of the waiting room before playing the game!.
+start-timer: 30
+
+# Set the loop timer.
+# If the attack team doesn't destroy the bed before the end of the timer, the defenser team get the point.
+loop-timer: 120
+
+# Set the respawn timer.
+respawn-timer: 3
+
+# Set the point to win.
+point: 3
+
+# Set the prefix for messages.
+prefix: "[Bridge]"
+
+# Set the spawn location for WaitingRoom.
+spawn-name: "WaitingRoom"
+spawn-location: "0.5, 0.0, 0.5, 0.0, 0.0"
+
+world:
+  # Set the block limit in Y.
+  block-limit: 50
+
+  # Set the locations of the colis
+  colis-locations:
+    - "0.5, 0.0, 0.5, 0.0 0.0"
+
+  # Set the location of the chest
+  chest-location: "0.5, 0.0, 0.5, 0.0, 0.0"
+
+  # Set the bed location corner to protect the bed.
+  bed-location-corner-1: "0.5, 0.0, 0.5, 0.0, 0.0"
+  bed-location-corner-2: "0.5, 0.0, 0.5, 0.0, 0.0"
+
+  # Set the build location radius to prevent the antigame of defenders.
+  build-location: "0.5, 0.0, 0.5, 0.0, 0.0"
+  build-radius: 5
+
+  # Set teams.
+  teams:
+    red:
+      name: "Rouge"
+      color: "c"
+      role: "Defender"
+      desc: "Protect the bed"
+      location: "0.5, 0.0, 0.5, 0.0, 0.0"
+    blue:
+      name: "Bleu"
+      color: "3"
+      role: "Attack"
+      desc: "Destroy the bed"
+      location: "0.5, 0.0, 0.5, 0.0, 0.0"

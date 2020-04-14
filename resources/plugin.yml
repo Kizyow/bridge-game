@@ -1,0 +1,6 @@
+name: Bridge
+author: Watch54
+version: 2.0
+main: fr.watch54.bridge.Bridge
+commands:
+  bridge:

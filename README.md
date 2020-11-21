@@ -1,2 +1,2 @@
 # bridge-game
-A mini-game Bridge for the HypeMC server
+A mini-game Bridge for the Elarya server
